@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from cassandra.cqlengine.management import sync_table
 from app.database.cassandra_config import connect_to_cassandra
 from app.models.models import Autor, Editora
-from app.routes import autores, editoras
+from app.routes import autores, editoras, pagamentos, pedido
 
 app = FastAPI(title="MyBooks API - Cassandra")
 
@@ -14,3 +14,4 @@ def on_startup():
 
 app.include_router(autores.router)
 app.include_router(editoras.router)
+app.include_router(pedido.router)

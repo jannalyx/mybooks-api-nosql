@@ -10,7 +10,7 @@ from app.schemas.schemas import (
     EditoraCount,
     PaginatedEditoras
 )
-from app.logs.logger import get_logger
+from logs.logger import get_logger
 
 logger = get_logger("MyBooks")
 router = APIRouter(prefix="/editoras", tags=["Editoras"])

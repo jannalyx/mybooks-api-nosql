@@ -77,3 +77,53 @@ class PaginatedEditoras(BaseModel):
 
     class Config:
         orm_mode = True
+
+class PedidoBase(BaseModel):
+    usuario_id: UUID
+    data_pedido: date
+    status: str
+    valor_total: float
+
+class PedidoCreate(PedidoBase):
+    pass
+
+class PedidoRead(PedidoBase):
+    id: UUID
+
+class PedidoUpdate(BaseModel):
+    status: Optional[str] = None
+    valor_total: Optional[float] = None
+
+class ContagemPedidos(BaseModel):
+    quantidade: int
+
+class PaginatedPedido(BaseModel):
+    page: int
+    limit: int
+    total: int
+    items: List[PedidoRead]
+
+class PagamentoBase(BaseModel):
+    pedido_id: UUID
+    data_pagamento: date
+    valor: float
+    forma_pagamento: str
+
+class PagamentoCreate(PagamentoBase):
+    pass
+
+class PagamentoRead(PagamentoBase):
+    id: UUID
+
+class PagamentoUpdate(BaseModel):
+    valor: Optional[float] = None
+    forma_pagamento: Optional[str] = None
+
+class PaginatedPagamentos(BaseModel):
+    page: int
+    limit: int
+    total: int
+    items: List[PagamentoRead]
+
+class PagamentoCount(BaseModel):
+    total_pagamentos: int
