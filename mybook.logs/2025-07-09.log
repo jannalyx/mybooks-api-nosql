@@ -1,0 +1,21 @@
+2025-07-09 21:09:56,874 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-09 21:09:56,901 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-09 21:09:57,033 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-09 21:09:57,206 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-09 21:09:58,194 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-09 21:09:58,199 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-09 21:12:41,162 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-09 21:12:41,184 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-09 21:12:41,265 [INFO] [MyBooks] Autor criado: fcab245f-cd99-43fa-aa8c-40f057922a00 - Machado de Assis (machado@literatura.com)!
+2025-07-09 21:12:57,465 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-09 21:12:57,466 [INFO] [MyBooks] Contagem de autores! 1!
+2025-07-09 21:13:13,966 [INFO] [MyBooks] Listagem ordenada de autores! Página 1, limite 10!
+2025-07-09 21:13:28,857 [INFO] [MyBooks] Listagem paginada de autores! Página 1, limite 10!
+2025-07-09 21:13:33,075 [INFO] [MyBooks] Listagem paginada de autores! Página 1, limite 10!
+2025-07-09 21:14:12,959 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-09 21:14:12,980 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-09 21:14:13,112 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-09 21:14:13,268 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-09 21:14:14,272 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-09 21:14:14,275 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-09 21:14:26,993 [INFO] [MyBooks] Listagem paginada de autores! Página 1, limite 10!

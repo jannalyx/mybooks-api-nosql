@@ -78,21 +78,108 @@ class PaginatedEditoras(BaseModel):
     class Config:
         orm_mode = True
 
-class PedidoBase(BaseModel):
+# ----------- LIVRO -----------
+
+class LivroCreate(BaseModel):
+    titulo: str
+    sinopse: Optional[str] = None
+    genero: str
+    preco: float
+    data_publicacao: date
+    autor_id: UUID
+    editora_id: UUID
+
+class LivroUpdate(BaseModel):
+    titulo: Optional[str] = None
+    sinopse: Optional[str] = None
+    genero: Optional[str] = None
+    preco: Optional[float] = None
+    data_publicacao: Optional[date] = None
+    autor_id: Optional[UUID] = None
+    editora_id: Optional[UUID] = None
+
+class LivroRead(BaseModel):
+    id: UUID
+    titulo: str
+    sinopse: Optional[str] = None
+    genero: str
+    preco: float
+    data_publicacao: date
+    autor_id: UUID
+    editora_id: UUID
+
+    class Config:
+        orm_mode = True
+
+class LivroCount(BaseModel):
+    total_livros: int
+
+class PaginatedLivros(BaseModel):
+    page: int
+    limit: int
+    total: int
+    items: List[LivroRead]
+
+    class Config:
+        orm_mode = True
+        
+# ----------- USUARIO -----------
+
+class UsuarioCreate(BaseModel):
+    nome: str
+    email: str
+    cpf: str
+
+class UsuarioUpdate(BaseModel):
+    nome: Optional[str] = None
+    email: Optional[str] = None
+    cpf: Optional[str] = None
+
+class UsuarioRead(BaseModel):
+    id: UUID
+    nome: str
+    email: str
+    cpf: str
+    data_cadastro: date
+
+    class Config:
+        orm_mode = True
+
+class UsuarioCount(BaseModel):
+    total_usuarios: int
+
+class PaginatedUsuario(BaseModel):
+    page: int
+    limit: int
+    total: int
+    items: List[UsuarioRead]
+
+    class Config:
+        orm_mode = True
+    
+# ----------- PEDIDO -----------
+
+class PedidoCreate(BaseModel):
     usuario_id: UUID
-    data_pedido: date
     status: str
     valor_total: float
-
-class PedidoCreate(PedidoBase):
-    pass
-
-class PedidoRead(PedidoBase):
-    id: UUID
+    data_pedido: date
 
 class PedidoUpdate(BaseModel):
+    usuario_id: Optional[UUID] = None
     status: Optional[str] = None
     valor_total: Optional[float] = None
+    data_pedido: Optional[date] = None
+
+class PedidoRead(BaseModel):
+    id: UUID
+    usuario_id: UUID
+    status: str
+    valor_total: float
+    data_pedido: date
+
+    class Config:
+        orm_mode = True
 
 class ContagemPedidos(BaseModel):
     quantidade: int
@@ -103,21 +190,35 @@ class PaginatedPedido(BaseModel):
     total: int
     items: List[PedidoRead]
 
-class PagamentoBase(BaseModel):
+    class Config:
+        orm_mode = True
+
+# ----------- PAGAMENTO -----------
+
+class PagamentoCreate(BaseModel):
     pedido_id: UUID
-    data_pagamento: date
     valor: float
+    data_pagamento: date
     forma_pagamento: str
 
-class PagamentoCreate(PagamentoBase):
-    pass
-
-class PagamentoRead(PagamentoBase):
-    id: UUID
-
 class PagamentoUpdate(BaseModel):
+    pedido_id: Optional[UUID] = None
     valor: Optional[float] = None
+    data_pagamento: Optional[date] = None
     forma_pagamento: Optional[str] = None
+
+class PagamentoRead(BaseModel):
+    id: UUID
+    pedido_id: UUID
+    valor: float
+    data_pagamento: date
+    forma_pagamento: str
+
+    class Config:
+        orm_mode = True
+
+class PagamentoCount(BaseModel):
+    total_pagamentos: int
 
 class PaginatedPagamentos(BaseModel):
     page: int
@@ -125,5 +226,5 @@ class PaginatedPagamentos(BaseModel):
     total: int
     items: List[PagamentoRead]
 
-class PagamentoCount(BaseModel):
-    total_pagamentos: int
+    class Config:
+        orm_mode = True

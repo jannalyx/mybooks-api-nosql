@@ -1,0 +1,76 @@
+2025-07-11 17:04:34,416 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-11 17:04:34,502 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-11 17:04:34,619 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-11 17:04:35,089 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-11 17:04:35,837 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:04:35,839 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:04:35,839 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:04:35,839 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:04:35,839 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:06:21,418 [INFO] [MyBooks] Listagem paginada de usuários! Página 1, limite 10!
+2025-07-11 17:07:20,608 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-11 17:08:23,721 [INFO] [MyBooks] Pedido criado: 3ad1a133-5b15-4960-be68-703e8d1edf56 (Usuário a7674c57-3fee-473f-8cb1-a65d94685c49)!
+2025-07-11 17:08:52,792 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-11 17:09:21,566 [INFO] [MyBooks] Listagem paginada de usuários! Página 1, limite 10!
+2025-07-11 17:10:12,104 [INFO] [MyBooks] Pedido criado: daa6bacc-7134-4d6d-95e2-a1ca7b27725a (Usuário 8149ca09-5622-49c0-8bc5-eb9b7b25db8d)!
+2025-07-11 17:10:20,640 [WARNING] [MyBooks] Usuário não encontrado! ID 8149ca09-5622-49c0-8bc5-eb9b7b25db8b!
+2025-07-11 17:10:55,448 [INFO] [MyBooks] Pedido criado: f4530a09-ac00-4ed2-8de8-d3d7c1f42c92 (Usuário 8149ca09-5622-49c0-8bc5-eb9b7b25db8d)!
+2025-07-11 17:11:08,346 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-11 17:11:23,163 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-11 17:11:23,165 [INFO] [MyBooks] Contagem de pedidos! 3!
+2025-07-11 17:12:06,746 [INFO] [MyBooks] Listagem ordenada de pedidos! Página 1, limite 10!
+2025-07-11 17:17:06,959 [INFO] [MyBooks] Listagem paginada de usuários! Página 1, limite 10!
+2025-07-11 17:18:14,835 [INFO] [MyBooks] Pedido criado: cc297aa6-0303-4b0c-9e13-c511d7d65f5c (Usuário b508b520-71ce-4e9b-bca8-acd72e0df426)!
+2025-07-11 17:18:24,184 [INFO] [MyBooks] Listagem ordenada de pedidos! Página 1, limite 10!
+2025-07-11 17:19:25,588 [INFO] [MyBooks] Pedido criado: 85c79af5-767b-4f9b-9aad-5a261569586a (Usuário b508b520-71ce-4e9b-bca8-acd72e0df426)!
+2025-07-11 17:19:34,055 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-11 17:20:15,211 [INFO] [MyBooks] Pedido deletado! ID 85c79af5-767b-4f9b-9aad-5a261569586a!
+2025-07-11 17:20:17,862 [WARNING] [MyBooks] Tentativa de deletar pedido inexistente! ID 85c79af5-767b-4f9b-9aad-5a261569586a!
+2025-07-11 17:20:24,004 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-11 17:20:37,221 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-11 17:20:37,221 [INFO] [MyBooks] Contagem de pedidos! 4!
+2025-07-11 17:21:25,341 [INFO] [MyBooks] Filtro de pedidos aplicado! Página 1, limite 10, total encontrados: 2!
+2025-07-11 17:21:46,341 [INFO] [MyBooks] Filtro de pedidos aplicado! Página 1, limite 10, total encontrados: 2!
+2025-07-11 17:21:55,220 [INFO] [MyBooks] Filtro de pedidos aplicado! Página 1, limite 10, total encontrados: 1!
+2025-07-11 17:22:43,354 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-11 17:23:32,641 [WARNING] [MyBooks] Usuário não encontrado! ID b508b520-71ce-4e9b-bca8-acd72e0df429!
+2025-07-11 17:42:39,149 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-11 17:42:39,191 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-11 17:42:39,341 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-11 17:42:39,607 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-11 17:42:40,376 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:42:40,378 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:42:40,379 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:42:40,380 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:42:40,382 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:42:40,383 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:43:31,312 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-11 17:44:57,338 [INFO] [MyBooks] Pagamento criado: 8fa287bc-1e37-44fb-9aa2-f8e6bab0e05a - Pedido daa6bacc-7134-4d6d-95e2-a1ca7b27725a!
+2025-07-11 17:45:16,371 [WARNING] [MyBooks] Pedido não encontrado! ID daa6bacc-7134-4d6d-95e2-a1ca7b27725b!
+2025-07-11 17:45:32,768 [INFO] [MyBooks] Listagem paginada de pagamentos! Página 1, limite 10!
+2025-07-11 17:45:45,723 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-11 17:45:45,724 [INFO] [MyBooks] Contagem de pagamentos! 1!
+2025-07-11 17:46:09,011 [INFO] [MyBooks] Listagem paginada de pagamentos! Página 1, limite 10!
+2025-07-11 17:46:31,271 [WARNING] [MyBooks] Pedido não encontrado! ID daa6bacc-7134-4d6d-95e2-a1ca7b27725b!
+2025-07-11 17:46:43,680 [INFO] [MyBooks] Pagamento atualizado! ID 8fa287bc-1e37-44fb-9aa2-f8e6bab0e05a!
+2025-07-11 17:46:59,526 [INFO] [MyBooks] Pagamento atualizado! ID 8fa287bc-1e37-44fb-9aa2-f8e6bab0e05a!
+2025-07-11 17:47:22,353 [INFO] [MyBooks] Pagamento criado: b263dba1-7362-4364-a572-d5b9371759c0 - Pedido daa6bacc-7134-4d6d-95e2-a1ca7b27725a!
+2025-07-11 17:47:41,213 [INFO] [MyBooks] Listagem paginada de pagamentos! Página 1, limite 10!
+2025-07-11 17:47:55,225 [INFO] [MyBooks] Pagamento deletado! ID b263dba1-7362-4364-a572-d5b9371759c0!
+2025-07-11 17:47:58,067 [WARNING] [MyBooks] Tentativa de deletar pagamento inexistente! ID b263dba1-7362-4364-a572-d5b9371759c0!
+2025-07-11 17:48:48,449 [INFO] [MyBooks] Filtro de pagamentos aplicado! Página 1, limite 10, total encontrados: 1!
+2025-07-11 17:55:41,641 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-11 17:55:41,675 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-11 17:55:41,809 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-11 17:55:41,986 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-11 17:55:42,869 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:55:42,871 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:55:42,872 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:55:42,874 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:55:42,876 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:55:42,877 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-11 17:56:09,997 [WARNING] [MyBooks] Pagamento já existente para o pedido! ID daa6bacc-7134-4d6d-95e2-a1ca7b27725a!
+2025-07-11 17:56:35,537 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-11 17:58:33,095 [INFO] [MyBooks] Pagamento criado: 6e6cc470-19a4-4083-9ab4-b1cb153c7690 - Pedido cc297aa6-0303-4b0c-9e13-c511d7d65f5c!
+2025-07-11 17:58:44,001 [INFO] [MyBooks] Listagem paginada de pagamentos! Página 1, limite 10!
+2025-07-11 17:59:10,846 [WARNING] [MyBooks] Já existe um pagamento para este pedido! ID daa6bacc-7134-4d6d-95e2-a1ca7b27725a!

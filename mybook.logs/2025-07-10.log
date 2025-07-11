@@ -1,0 +1,286 @@
+2025-07-10 12:38:03,823 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 12:38:05,842 [WARNING] [cassandra.cluster] [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\connection.py", line 846, in factory
+    conn = cls(endpoint, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\io\asyncorereactor.py", line 353, in __init__
+    self._connect_socket()
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\connection.py", line 951, in _connect_socket
+    raise socket.error(sockerr.errno, "Tried connecting to %s. Last error: %s" %
+ConnectionRefusedError: [Errno 10061] Tried connecting to [('127.0.0.1', 9042)]. Last error: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+2025-07-10 12:38:05,927 [ERROR] [cassandra.cluster] Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionRefusedError(10061, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")})
+2025-07-10 12:40:32,469 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 12:40:32,485 [WARNING] [cassandra.cluster] [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-07-10 12:40:32,500 [WARNING] [cassandra.cluster] Host 127.0.0.1:9042 has been marked down
+2025-07-10 12:40:32,500 [ERROR] [cassandra.cluster] Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-07-10 12:45:39,381 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 12:45:39,477 [WARNING] [cassandra.cluster] [control connection] Error connecting to 127.0.0.1:9042:
+Traceback (most recent call last):
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3577, in _reconnect_internal
+    return self._try_connect(host)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3599, in _try_connect
+    connection = self._cluster.connection_factory(host.endpoint, is_control_connection=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 1670, in connection_factory
+    return self.connection_class.factory(endpoint, self.connect_timeout, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\connection.py", line 852, in factory
+    raise conn.last_error
+cassandra.connection.ConnectionShutdown: Connection to 127.0.0.1:9042 was closed
+2025-07-10 12:45:39,514 [WARNING] [cassandra.cluster] Host 127.0.0.1:9042 has been marked down
+2025-07-10 12:45:39,514 [ERROR] [cassandra.cluster] Control connection failed to connect, shutting down Cluster:
+Traceback (most recent call last):
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 1740, in connect
+    self.control_connection.connect()
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3543, in connect
+    self._set_new_connection(self._reconnect_internal())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rafael Linhares\Desktop\mybooks\venv\Lib\site-packages\cassandra\cluster.py", line 3588, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'127.0.0.1:9042': ConnectionShutdown('Connection to 127.0.0.1:9042 was closed')})
+2025-07-10 12:48:27,449 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 12:48:27,527 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 12:48:27,654 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 12:48:27,915 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-10 12:48:29,017 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 12:48:31,875 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 12:48:32,338 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 12:50:04,927 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:50:04,950 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:50:04,982 [INFO] [MyBooks] Autor criado: a7cf283a-ec21-4822-858a-a2305a09449e - Helena Borges (helena.borges@example.com)!
+2025-07-10 12:50:22,869 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:50:22,890 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:50:22,913 [INFO] [MyBooks] Autor criado: 8d8e0f7e-0777-4698-8310-a315b80beca6 - Miguel Arantes (miguel.arantes@example.com)!
+2025-07-10 12:50:41,047 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:50:41,074 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:50:41,090 [INFO] [MyBooks] Autor criado: 6eec9fe0-b9e3-459d-8dd2-0c4abcfd269a - Lívia Yamamoto (livia.yamamoto@example.com)!
+2025-07-10 12:50:57,068 [INFO] [MyBooks] Listagem paginada de autores! Página 1, limite 10!
+2025-07-10 12:51:18,625 [INFO] [MyBooks] Listagem ordenada de autores! Página 1, limite 10!
+2025-07-10 12:51:55,051 [INFO] [MyBooks] Filtro aplicado! Total encontrados: 1!
+2025-07-10 12:52:05,633 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:52:05,634 [INFO] [MyBooks] Contagem de autores! 3!
+2025-07-10 12:52:13,865 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:52:13,866 [INFO] [MyBooks] Contagem de autores! 3!
+2025-07-10 12:53:05,885 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:53:05,900 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:53:05,917 [INFO] [MyBooks] Editora criada: 9c1be7d7-139c-40d6-8837-b5399cce7ff6 - Estrela do Sul!
+2025-07-10 12:53:20,388 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:53:20,416 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:53:20,435 [INFO] [MyBooks] Editora criada: 07cd724c-aa50-4ccc-b9b4-2fb5c21016d0 - Aurora Editorial!
+2025-07-10 12:53:34,037 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:53:34,067 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 12:53:34,086 [INFO] [MyBooks] Editora criada: 52fe38ab-4c9c-42bd-b892-a786a27fb579 - Ponte Velha Books!
+2025-07-10 12:56:08,842 [INFO] [MyBooks] Listagem paginada de autores! Página 1, limite 10!
+2025-07-10 12:56:50,472 [INFO] [MyBooks] Listagem paginada de editoras! Página 1, limite 10!
+2025-07-10 12:57:12,008 [WARNING] [MyBooks] Autor não encontrado! ID 8d8e0f7e-0777-4698-8310-a315b80beca7!
+2025-07-10 12:57:37,946 [INFO] [MyBooks] Livro criado: bba5c917-2a73-4dc4-a212-c3e564accd8f - O Enigma de Lisboa!
+2025-07-10 12:57:48,186 [INFO] [MyBooks] Livro criado: 93c8330f-3cdb-48d0-9a85-3bcd6dfec878 - O Enigma de Lisboa!
+2025-07-10 13:02:37,209 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 13:02:37,242 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 13:02:37,360 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 13:02:37,541 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-10 13:02:37,781 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 13:02:37,812 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 13:02:37,944 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 13:02:38,102 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-10 13:02:38,451 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 13:02:38,453 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 13:02:38,454 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 13:02:39,221 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 13:02:39,226 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 13:02:39,228 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 13:03:01,838 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 13:03:43,360 [INFO] [MyBooks] Livro deletado! ID 93c8330f-3cdb-48d0-9a85-3bcd6dfec878!
+2025-07-10 13:04:08,561 [INFO] [MyBooks] Livro deletado! ID bba5c917-2a73-4dc4-a212-c3e564accd8f!
+2025-07-10 13:04:21,293 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 13:05:07,438 [INFO] [MyBooks] Livro criado: fc2740b6-c3a2-4fcc-81ce-7a9cb7c44952 - O Enigma de Lisboa!
+2025-07-10 13:05:21,125 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 16:15:27,247 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 16:15:27,407 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 16:15:27,551 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 16:15:28,424 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-10 16:15:28,771 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 16:15:28,771 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 16:15:28,775 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 16:15:48,483 [INFO] [MyBooks] Listagem paginada de autores! Página 1, limite 10!
+2025-07-10 16:16:22,633 [INFO] [MyBooks] Autor deletado! ID a7cf283a-ec21-4822-858a-a2305a09449e!
+2025-07-10 16:16:35,315 [INFO] [MyBooks] Autor deletado! ID 6eec9fe0-b9e3-459d-8dd2-0c4abcfd269a!
+2025-07-10 16:16:48,758 [INFO] [MyBooks] Autor deletado! ID 8d8e0f7e-0777-4698-8310-a315b80beca6!
+2025-07-10 16:16:50,728 [WARNING] [MyBooks] Tentativa de deletar autor inexistente! ID 8d8e0f7e-0777-4698-8310-a315b80beca6!
+2025-07-10 16:18:38,033 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:18:38,061 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:18:38,108 [INFO] [MyBooks] Autor criado: b6feb286-e884-495b-97df-53c241c70a5d - Ana Beatriz Monteiro (ana.monteiro@email.com)!
+2025-07-10 16:19:01,177 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:19:01,197 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:19:01,221 [INFO] [MyBooks] Autor criado: 92288916-e603-469c-9cab-1a2eccdb9102 - Miguel Torres Delgado (miguel.delgado@literatura.mx)!
+2025-07-10 16:19:06,175 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:19:06,176 [WARNING] [MyBooks] Nome já em uso! Miguel Torres Delgado!
+2025-07-10 16:19:25,454 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:19:25,474 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:19:25,494 [INFO] [MyBooks] Autor criado: 599d498b-da69-41cc-a224-090ee277cd4f - Clara Jensen (clara.jensen@autores.dk)!
+2025-07-10 16:19:48,776 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:19:48,801 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:19:48,822 [INFO] [MyBooks] Autor criado: 4190ea84-f008-47d4-94a0-83343f26a1c6 - João Paulo Ferreira (jp.ferreira@livros.com.br)!
+2025-07-10 16:20:04,648 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:20:04,665 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:20:04,679 [INFO] [MyBooks] Autor criado: 441dc2e1-3d9b-46b1-be55-55fef186e388 - Emma R. Blake (emma.blake@writers.co.uk)!
+2025-07-10 16:20:19,808 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:20:19,809 [WARNING] [MyBooks] Nome já em uso! Emma R. Blake!
+2025-07-10 16:20:26,630 [INFO] [MyBooks] Listagem paginada de autores! Página 1, limite 10!
+2025-07-10 16:20:51,158 [INFO] [MyBooks] Listagem ordenada de autores! Página 1, limite 10!
+2025-07-10 16:21:20,872 [INFO] [MyBooks] Filtro aplicado! Total encontrados: 2!
+2025-07-10 16:21:38,570 [INFO] [MyBooks] Filtro aplicado! Total encontrados: 1!
+2025-07-10 16:21:52,457 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:21:52,459 [INFO] [MyBooks] Contagem de autores! 5!
+2025-07-10 16:22:35,425 [WARNING] [MyBooks] Nome já em uso por outro autor! João Paulo Ferreira!
+2025-07-10 16:22:43,387 [WARNING] [MyBooks] E-mail já em uso por outro autor! jp.ferreira@livros.com.br!
+2025-07-10 16:23:04,252 [INFO] [MyBooks] Listagem paginada de editoras! Página 1, limite 10!
+2025-07-10 16:23:34,136 [INFO] [MyBooks] Editora deletada! ID 52fe38ab-4c9c-42bd-b892-a786a27fb579!
+2025-07-10 16:23:37,076 [WARNING] [MyBooks] Tentativa de deletar editora inexistente! ID 52fe38ab-4c9c-42bd-b892-a786a27fb579!
+2025-07-10 16:23:47,483 [INFO] [MyBooks] Editora deletada! ID 9c1be7d7-139c-40d6-8837-b5399cce7ff6!
+2025-07-10 16:24:00,859 [INFO] [MyBooks] Editora deletada! ID 07cd724c-aa50-4ccc-b9b4-2fb5c21016d0!
+2025-07-10 16:24:09,920 [INFO] [MyBooks] Listagem paginada de editoras! Página 1, limite 10!
+2025-07-10 16:25:16,912 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:25:16,923 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:25:16,947 [INFO] [MyBooks] Editora criada: da65755a-a553-4d3f-9367-818c428d1642 - Editora Horizonte!
+2025-07-10 16:25:34,476 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:25:34,503 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:25:34,515 [INFO] [MyBooks] Editora criada: 297a9155-0453-48e0-9c41-6616242f596e - Lumen Publishing!
+2025-07-10 16:25:51,782 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:25:51,798 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:25:51,810 [INFO] [MyBooks] Editora criada: d4899649-b21d-4393-9935-7cdb6039dfe9 - Casa das Palavras!
+2025-07-10 16:26:07,292 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:26:07,321 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:26:07,346 [INFO] [MyBooks] Editora criada: 26ef917c-e5e3-4df4-a756-07707dd3c185 - Editora Raízes!
+2025-07-10 16:26:25,314 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:26:25,333 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:26:25,348 [INFO] [MyBooks] Editora criada: d0ba7b5d-ffc9-4d32-8833-653911874195 - Élan Éditions!
+2025-07-10 16:26:29,150 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:26:29,150 [WARNING] [MyBooks] Nome já em uso! Élan Éditions!
+2025-07-10 16:26:41,931 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:26:41,949 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:26:41,951 [WARNING] [MyBooks] E-mail já em uso! contact@elan-editions.fr!
+2025-07-10 16:26:57,177 [INFO] [MyBooks] Listagem paginada de editoras! Página 1, limite 10!
+2025-07-10 16:27:28,868 [INFO] [MyBooks] Listagem ordenada de editoras! Página 1, limite 10!
+2025-07-10 16:29:07,079 [WARNING] [MyBooks] Nome já em uso por outra editora! Editora Raízes!
+2025-07-10 16:29:13,076 [WARNING] [MyBooks] E-mail já em uso por outra editora! raizes@editoras.com.br!
+2025-07-10 16:29:46,098 [INFO] [MyBooks] Editora atualizada! ID d0ba7b5d-ffc9-4d32-8833-653911874195!
+2025-07-10 16:30:00,919 [INFO] [MyBooks] Listagem ordenada de editoras! Página 1, limite 10!
+2025-07-10 16:32:14,605 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 16:32:14,608 [INFO] [MyBooks] Contagem de editoras! 5!
+2025-07-10 16:33:10,990 [INFO] [MyBooks] Filtro de editoras aplicado! Página 1, limite 10, total encontrados: 3!
+2025-07-10 16:33:35,672 [INFO] [MyBooks] Filtro de editoras aplicado! Página 1, limite 10, total encontrados: 1!
+2025-07-10 16:37:53,568 [INFO] [MyBooks] Listagem paginada de autores! Página 1, limite 10!
+2025-07-10 16:39:20,294 [INFO] [MyBooks] Listagem paginada de editoras! Página 1, limite 10!
+2025-07-10 16:40:34,238 [INFO] [MyBooks] Livro criado: 96167c71-6626-427b-8278-f55313dd3e80 - Fragmentos do Silêncio!
+2025-07-10 16:40:51,460 [INFO] [MyBooks] Livro criado: 55c3900d-9e25-48c0-a856-f71275a15fc9 - As Sombras da Revolução!
+2025-07-10 16:41:44,283 [WARNING] [MyBooks] Autor não encontrado! ID 599d498b-da69-41cc-a224-090ee277cd6f!
+2025-07-10 16:41:54,333 [WARNING] [MyBooks] Editora não encontrada! ID 297a9155-0453-48e0-9c41-6616242f599e!
+2025-07-10 16:42:00,597 [INFO] [MyBooks] Livro criado: fb4aa08e-a335-4526-a779-6c0c82afb853 - Horizonte Sintético!
+2025-07-10 16:42:19,794 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 16:42:42,939 [INFO] [MyBooks] Livro atualizado! ID 96167c71-6626-427b-8278-f55313dd3e80!
+2025-07-10 16:43:13,559 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 16:48:49,023 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 16:48:49,066 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 16:48:49,192 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 16:48:49,371 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-10 16:48:50,428 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 16:48:50,428 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 16:48:50,428 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 16:49:10,415 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 16:50:05,430 [INFO] [MyBooks] Livro deletado! ID fb4aa08e-a335-4526-a779-6c0c82afb853!
+2025-07-10 16:50:08,222 [WARNING] [MyBooks] Tentativa de deletar livro inexistente! ID fb4aa08e-a335-4526-a779-6c0c82afb853!
+2025-07-10 16:50:14,400 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 16:50:45,533 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 16:51:07,310 [WARNING] [MyBooks] Título já em uso por outro livro! As Sombras da Revolução!
+2025-07-10 16:51:24,872 [WARNING] [MyBooks] Título já em uso por outro livro! As Sombras da Revolução!
+2025-07-10 16:51:31,820 [WARNING] [MyBooks] Autor não encontrado! ID 92288916-e603-469c-9cab-1a2eccdb9103!
+2025-07-10 16:52:52,564 [INFO] [MyBooks] Filtro de livros aplicado! Página 1, limite 10, total encontrados: 1!
+2025-07-10 16:53:38,296 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 16:54:23,602 [INFO] [MyBooks] Livro criado: b0069e25-1683-4ca1-98b6-3e5d9fc11aef - Fragmentos do Silêncio!
+2025-07-10 16:54:35,252 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-10 16:55:14,446 [INFO] [MyBooks] Filtro de livros aplicado! Página 1, limite 10, total encontrados: 2!
+2025-07-10 16:55:25,816 [INFO] [MyBooks] Filtro de livros aplicado! Página 1, limite 10, total encontrados: 1!
+2025-07-10 16:55:33,772 [INFO] [MyBooks] Filtro de livros aplicado! Página 1, limite 10, total encontrados: 2!
+2025-07-10 16:55:57,495 [INFO] [MyBooks] Filtro de livros aplicado! Página 1, limite 10, total encontrados: 2!
+2025-07-10 16:56:11,803 [INFO] [MyBooks] Filtro de livros aplicado! Página 1, limite 10, total encontrados: 1!
+2025-07-10 16:56:22,671 [INFO] [MyBooks] Listagem ordenada de livros! Página 1, limite 10!
+2025-07-10 22:45:07,650 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 22:45:07,720 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 22:45:07,836 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 22:45:08,155 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-10 22:45:08,963 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 22:45:08,966 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 22:45:08,968 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 22:45:08,970 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 22:46:14,825 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 22:46:14,858 [INFO] [MyBooks] Usuário criado: 945c725a-ca73-4594-8071-aa2eca578143 - Ana Beatriz Ramos (ana.ramos@example.com)!
+2025-07-10 22:51:22,025 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-10 22:51:22,042 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 22:51:22,164 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-10 22:51:22,338 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-10 22:51:23,328 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 22:51:23,331 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 22:51:23,332 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 22:51:23,333 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-10 22:51:41,328 [INFO] [MyBooks] Listagem paginada de usuários! Página 1, limite 10!
+2025-07-10 22:51:57,785 [INFO] [MyBooks] Usuário deletado! ID 945c725a-ca73-4594-8071-aa2eca578143!
+2025-07-10 22:52:00,456 [WARNING] [MyBooks] Tentativa de deletar usuário inexistente! ID 945c725a-ca73-4594-8071-aa2eca578143!
+2025-07-10 22:52:08,510 [INFO] [MyBooks] Listagem paginada de usuários! Página 1, limite 10!
+2025-07-10 22:52:57,871 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 22:52:57,887 [INFO] [MyBooks] Usuário criado: a7674c57-3fee-473f-8cb1-a65d94685c49 - Ana Beatriz Ramos (ana.ramos@example.com)!
+2025-07-10 22:53:02,278 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 22:53:02,289 [WARNING] [MyBooks] CPF já cadastrado! 12345678901!
+2025-07-10 22:53:18,519 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 22:53:18,542 [INFO] [MyBooks] Usuário criado: 8149ca09-5622-49c0-8bc5-eb9b7b25db8d - Carlos Henrique Souza (carlos.henrique@example.com)!
+2025-07-10 22:53:31,746 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 22:53:31,773 [INFO] [MyBooks] Usuário criado: b508b520-71ce-4e9b-bca8-acd72e0df426 - Fernanda Lima Alves (fernanda.lima@example.com)!
+2025-07-10 22:53:56,696 [WARNING] [MyBooks] CPF já em uso por outro usuário! 98765432100!
+2025-07-10 22:54:12,507 [INFO] [MyBooks] Listagem paginada de usuários! Página 1, limite 10!
+2025-07-10 22:54:38,331 [INFO] [MyBooks] Listagem ordenada de usuários! Página 1, limite 10!
+2025-07-10 22:54:49,935 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-10 22:54:49,938 [INFO] [MyBooks] Contagem de usuários! 3!
+2025-07-10 22:55:18,447 [INFO] [MyBooks] Filtro de usuários aplicado! Página 1, limite 10, total encontrados: 1!
+2025-07-10 22:55:42,787 [INFO] [MyBooks] Filtro de usuários aplicado! Página 1, limite 10, total encontrados: 1!

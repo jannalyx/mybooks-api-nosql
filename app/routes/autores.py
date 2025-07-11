@@ -6,7 +6,7 @@ from cassandra.cqlengine.query import DoesNotExist
 from cassandra.util import Date as CassandraDate
 from app.models.models import Autor
 from app.schemas.schemas import AutorCreate, AutorUpdate, AutorRead, AutorCount, PaginatedAutor
-from logs.logger import get_logger
+from app.logs.logger import get_logger
 
 logger = get_logger("MyBooks")
 router = APIRouter(prefix="/autores", tags=["Autores"])
