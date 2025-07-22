@@ -305,3 +305,31 @@ class PedidoDetalhado(BaseModel):
 
     class Config:
         orm_mode = True
+
+# ----------- EDITORA_DETALHADO -----------
+
+class AutorInfo(BaseModel):
+    id: UUID
+    nome: str
+
+    class Config:
+        orm_mode = True
+
+class LivroComAutor(BaseModel):
+    id: UUID
+    titulo: str
+    autor: AutorInfo
+
+    class Config:
+        orm_mode = True
+
+class EditoraComLivrosAutores(BaseModel):
+    id: UUID
+    nome: str
+    endereco: str
+    telefone: str
+    email: str
+    livros: List[LivroComAutor]
+
+    class Config:
+        orm_mode = True
