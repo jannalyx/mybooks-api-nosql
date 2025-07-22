@@ -228,7 +228,7 @@ class PaginatedPagamentos(BaseModel):
 
     class Config:
         orm_mode = True
-        
+
 # ----------- PAGAMENTO -----------
 
 class PedidoPagamentoBase(BaseModel):

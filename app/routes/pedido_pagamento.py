@@ -3,7 +3,7 @@ from typing import List
 from uuid import UUID
 from cassandra.cqlengine.query import DoesNotExist
 from app.models.models import PedidoPagamento
-from app.schemas.schemas import PedidoPagamentoCreate, PedidoPagamentoRead
+from app.schemas.schemas import PedidoPagamentoCreate, PedidoPagamentoRead, PaginatedPedidoPagamento
 from app.logs.logger import get_logger
 
 logger = get_logger("MyBooks")
@@ -27,15 +27,30 @@ def vincular_pagamento_pedido(rel: PedidoPagamentoCreate):
     logger.info(f"Pagamento vinculado ao pedido: Pedido {rel.pedido_id} - Pagamento {rel.pagamento_id}")
     return PedidoPagamentoRead(**serialize(nova_rel))
 
-@router.get("/pagamentos/{pedido_id}", response_model=List[PedidoPagamentoRead])
-def listar_pagamentos_de_pedido(pedido_id: UUID = Path(..., description="ID do Pedido")):
-    rels = PedidoPagamento.objects(pedido_id=pedido_id)
-    if rels.count() == 0:
+@router.get("/pagamentos/{pedido_id}", response_model=PaginatedPedidoPagamento)
+def listar_pagamentos_de_pedido(
+    pedido_id: UUID = Path(..., description="ID do Pedido"),
+    page: int = Query(1, ge=1),
+    limit: int = Query(10, ge=1),
+):
+    todos = list(PedidoPagamento.objects(pedido_id=pedido_id))
+    total = len(todos)
+    if total == 0:
         logger.warning(f"Nenhum pagamento vinculado ao pedido {pedido_id}")
         raise HTTPException(status_code=404, detail="Nenhum pagamento vinculado a esse pedido.")
-    pagamentos = [PedidoPagamentoRead(**serialize(rel)) for rel in rels]
-    logger.info(f"Listados {len(pagamentos)} pagamentos vinculados ao pedido {pedido_id}")
-    return pagamentos
+
+    offset = (page - 1) * limit
+    pagamentos_paginados = todos[offset:offset + limit]
+
+    logger.info(f"Listagem paginada de pagamentos vinculados ao pedido {pedido_id}. Página {page}, limite {limit}.")
+    items = [PedidoPagamentoRead(**serialize(p)) for p in pagamentos_paginados]
+
+    return PaginatedPedidoPagamento(
+        page=page,
+        limit=limit,
+        total=total,
+        items=items,
+    )
 
 @router.delete("/desvincular", status_code=204)
 def desvincular_pagamento_pedido(
