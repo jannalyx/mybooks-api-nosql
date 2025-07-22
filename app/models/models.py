@@ -59,3 +59,8 @@ class Pagamento(Model):
     valor = columns.Float()
     data_pagamento = columns.Date()
     forma_pagamento = columns.Text()
+
+class PedidoPagamento(Model):
+    __keyspace__ = 'mybooks'
+    pedido_id = columns.UUID(primary_key=True, partition_key=True)
+    pagamento_id = columns.UUID(primary_key=True, clustering_order="ASC")

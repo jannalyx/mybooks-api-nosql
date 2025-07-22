@@ -228,3 +228,28 @@ class PaginatedPagamentos(BaseModel):
 
     class Config:
         orm_mode = True
+        
+# ----------- PAGAMENTO -----------
+
+class PedidoPagamentoBase(BaseModel):
+    pedido_id: UUID
+    pagamento_id: UUID
+
+class PedidoPagamentoCreate(PedidoPagamentoBase):
+    pass
+
+class PedidoPagamentoRead(PedidoPagamentoBase):
+    class Config:
+        orm_mode = True
+
+class PedidoPagamentoCount(BaseModel):
+    total_pedido_pagamentos: int
+
+class PaginatedPedidoPagamento(BaseModel):
+    page: int
+    limit: int
+    total: int
+    items: List[PedidoPagamentoRead]
+
+    class Config:
+        orm_mode = True
