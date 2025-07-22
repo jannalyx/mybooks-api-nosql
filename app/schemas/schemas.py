@@ -193,6 +193,37 @@ class PaginatedPedido(BaseModel):
     class Config:
         orm_mode = True
 
+
+# ----------- LIVRO_PEDIDO -----------
+
+class PedidoLivroBase(BaseModel):
+    pedido_id: UUID
+    livro_id: UUID
+
+class PedidoLivroCreate(PedidoLivroBase):
+    pass
+
+class PedidoLivroRead(PedidoLivroBase):
+    class Config:
+        orm_mode = True
+
+class PaginatedPedidoLivro(BaseModel):
+    page: int
+    limit: int
+    total: int
+    items: List['LivroInfo']
+
+    class Config:
+        orm_mode = True
+
+class LivroInfo(BaseModel):
+    id: UUID
+    titulo: str
+    autor_nome: str
+
+    class Config:
+        orm_mode = True
+
 # ----------- PAGAMENTO -----------
 
 class PagamentoCreate(BaseModel):
@@ -229,7 +260,7 @@ class PaginatedPagamentos(BaseModel):
     class Config:
         orm_mode = True
 
-# ----------- PAGAMENTO -----------
+# ----------- PEDIDO_PAGAMENTO -----------
 
 class PedidoPagamentoBase(BaseModel):
     pedido_id: UUID
@@ -250,6 +281,27 @@ class PaginatedPedidoPagamento(BaseModel):
     limit: int
     total: int
     items: List[PedidoPagamentoRead]
+
+    class Config:
+        orm_mode = True
+
+# ----------- PEDIDO DETALHADO -----------
+
+class LivroInfo(BaseModel):
+    id: UUID
+    titulo: str
+    autor_nome: str
+
+class PagamentoInfo(BaseModel):
+    id: UUID
+    valor: float
+    data_pagamento: str
+
+class PedidoDetalhado(BaseModel):
+    id: UUID
+    data_pedido: str 
+    livros: List[LivroInfo]
+    pagamentos: List[PagamentoInfo]
 
     class Config:
         orm_mode = True
