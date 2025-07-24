@@ -35,41 +35,43 @@ A estrutura foi organizada em camadas: models, schemas, routers e logs.
 
 1. Clone o repositório e navegue até o diretório do projeto:
 
-bash
+
+```bash
 git clone https://github.com/jannalyx/mybooks-api-nosql.git
 cd mybooks-api-nosq
-
+```
 
 
 2. Instale as dependências:
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 
 3. Suba o banco Cassandra com Docker:
 
-bash
+```bash
 docker-compose up -d
-
+```
 
 
 4. Aguarde o Cassandra iniciar e entre no terminal do container para verificar
 
-bash
+```bash
 docker exec -it cassandra-db cqlsh
-
+```
 
 
 5. Rode a aplicação:
 
-bash
+```bash
 uvicorn app.main:app --reload
-
+```
 
 
 6. Acesse a documentação interativa:
 
-bash
+```bash
 http://localhost:8000/docs
+```
