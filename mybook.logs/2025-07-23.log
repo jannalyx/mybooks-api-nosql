@@ -1,0 +1,168 @@
+2025-07-23 13:21:31,391 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-23 13:21:31,484 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 13:21:32,487 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 13:21:33,524 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-23 13:21:34,776 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:21:38,186 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:21:38,992 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:21:41,166 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:21:43,950 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:21:44,881 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:21:45,824 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:24:06,322 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-23 13:24:06,453 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 13:24:07,574 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 13:24:08,791 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-23 13:24:09,390 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:24:09,392 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:24:09,393 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:24:09,393 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:24:09,394 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:24:09,396 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:24:09,399 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:26:34,950 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-23 13:26:34,999 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 13:26:36,150 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 13:26:37,232 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-23 13:26:38,329 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:26:38,330 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:26:38,331 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:26:38,331 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:26:38,332 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:26:38,332 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:26:38,333 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 13:42:29,021 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:42:29,047 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:42:29,143 [INFO] [MyBooks] Autor criado: 42c79371-8671-417b-b935-babdda0ad231 - Ana Clara Silva (ana.clara.silva@example.com)!
+2025-07-23 13:43:31,909 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:43:31,949 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:43:31,982 [INFO] [MyBooks] Autor criado: ac7659b9-072f-4d93-af24-20bb13e819f2 - Carlos Eduardo Santos (carlos.eduardo@example.com)!
+2025-07-23 13:43:46,711 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:43:46,722 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:43:46,734 [INFO] [MyBooks] Autor criado: bae7c937-be9b-40a0-98a2-4cbe752b6c02 - Mariana Oliveira (mariana.oliveira@example.com)!
+2025-07-23 13:43:52,901 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:43:52,917 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:43:52,935 [INFO] [MyBooks] Autor criado: 538bf626-e379-4960-b7aa-30927e3ec92d - Júlio Fernandes (julio.fernandes@example.com)!
+2025-07-23 13:43:57,831 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:43:57,851 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:43:57,878 [INFO] [MyBooks] Autor criado: 606d9706-ccb0-4a75-be93-9f446027f50d - Sofia Ribeiro (sofia.ribeiro@example.com)!
+2025-07-23 13:44:57,062 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:44:57,084 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:44:57,103 [INFO] [MyBooks] Editora criada: 32f29f20-d9c8-4145-87df-ba9ae6d75209 - Editora Alfa!
+2025-07-23 13:45:03,147 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:45:03,169 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:45:03,182 [INFO] [MyBooks] Editora criada: b5064088-24d2-4c2c-8d11-2820aae2f093 - Editora Beta!
+2025-07-23 13:45:09,069 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:45:09,101 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:45:09,133 [INFO] [MyBooks] Editora criada: 7280e5f1-f6b5-4555-a587-a6b091f07778 - Editora Gama!
+2025-07-23 13:45:14,498 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:45:14,529 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:45:14,551 [INFO] [MyBooks] Editora criada: 11ab53d6-5cb9-4196-8162-9bd2b30f9a10 - Editora Delta!
+2025-07-23 13:45:19,663 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:45:19,683 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:45:19,703 [INFO] [MyBooks] Editora criada: 11ced008-e5e3-4edb-bfe6-85731124e4af - Editora Épsilon!
+2025-07-23 13:47:10,749 [INFO] [MyBooks] Livro criado: 37f98e2e-5261-4142-80fb-9242cc8b9a02 - O Mistério da Floresta!
+2025-07-23 13:47:55,381 [INFO] [MyBooks] Livro criado: b2b627e9-3386-4a5d-a592-93a4e0abd093 - Aprendendo Python!
+2025-07-23 13:48:57,015 [INFO] [MyBooks] Livro criado: 534827fa-8b89-4425-9007-bab617add918 - Histórias do Sertão!
+2025-07-23 13:49:33,496 [INFO] [MyBooks] Livro criado: a796f6dc-da61-42ad-b728-d8f450972679 - Culinária Vegetariana!
+2025-07-23 13:50:02,181 [INFO] [MyBooks] Livro criado: a60600c7-76c8-468b-8255-78395d30035c - Viagens pelo Mundo!
+2025-07-23 13:50:32,684 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:50:32,720 [INFO] [MyBooks] Usuário criado: dcae6275-9edb-41ff-a734-9e55174d4cd7 - João Pedro Silva (joao.pedro@example.com)!
+2025-07-23 13:50:39,316 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:50:39,338 [INFO] [MyBooks] Usuário criado: 431c1f72-52ac-46ae-ae3c-09c98d7ce5e2 - Mariana Souza (mariana.souza@example.com)!
+2025-07-23 13:50:44,552 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:50:44,581 [INFO] [MyBooks] Usuário criado: 7cb7180f-ba01-4c29-a71f-b0fd8d435177 - Rafael Costa (rafael.costa@example.com)!
+2025-07-23 13:50:50,181 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:50:50,197 [INFO] [MyBooks] Usuário criado: fb4137b1-80eb-48ce-aa1f-f754b61a5aec - Larissa Mendes (larissa.mendes@example.com)!
+2025-07-23 13:50:55,613 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 13:50:55,630 [INFO] [MyBooks] Usuário criado: 1610d7ce-0474-42ce-9189-ba37f08e26e1 - Felipe Oliveira (felipe.oliveira@example.com)!
+2025-07-23 13:51:40,796 [INFO] [MyBooks] Pedido criado: 19596530-818a-4ad3-a0b3-2342de45059c (Usuário dcae6275-9edb-41ff-a734-9e55174d4cd7)!
+2025-07-23 13:51:57,299 [INFO] [MyBooks] Pedido criado: 4a7edf07-f064-46c4-83d7-f1269b64da4f (Usuário 431c1f72-52ac-46ae-ae3c-09c98d7ce5e2)!
+2025-07-23 13:52:19,068 [INFO] [MyBooks] Pedido criado: 3bb9092f-c535-4c3f-8ac2-84a8a794f297 (Usuário 1610d7ce-0474-42ce-9189-ba37f08e26e1)!
+2025-07-23 13:52:40,113 [INFO] [MyBooks] Pedido criado: 37c26b62-8bd4-4d89-a86e-0c73a4913e7e (Usuário fb4137b1-80eb-48ce-aa1f-f754b61a5aec)!
+2025-07-23 13:52:54,868 [INFO] [MyBooks] Pedido criado: db4f05ed-f581-4b97-8ae3-b8a014b50916 (Usuário 7cb7180f-ba01-4c29-a71f-b0fd8d435177)!
+2025-07-23 13:55:00,120 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-23 13:56:11,865 [INFO] [MyBooks] Pagamento criado: 2e3db2da-6a2f-4076-a849-81dbfc9408ba - Pedido 4a7edf07-f064-46c4-83d7-f1269b64da4f!
+2025-07-23 13:56:50,143 [INFO] [MyBooks] Pagamento criado: 71e69cd5-585a-4b07-b4b0-7384d3a95e51 - Pedido 3bb9092f-c535-4c3f-8ac2-84a8a794f297!
+2025-07-23 13:57:18,527 [INFO] [MyBooks] Pagamento criado: 996b9176-b0f4-4e43-bbf7-74425831aa8f - Pedido 37c26b62-8bd4-4d89-a86e-0c73a4913e7e!
+2025-07-23 13:57:58,978 [INFO] [MyBooks] Pagamento criado: 71afab87-ac4e-47a7-bce4-d88895164405 - Pedido db4f05ed-f581-4b97-8ae3-b8a014b50916!
+2025-07-23 13:58:25,714 [INFO] [MyBooks] Pagamento criado: 3d268538-6085-4d99-bd1f-da1d3442b3fc - Pedido 19596530-818a-4ad3-a0b3-2342de45059c!
+2025-07-23 13:59:08,235 [INFO] [MyBooks] Listagem paginada de pagamentos! Página 1, limite 10!
+2025-07-23 13:59:38,846 [WARNING] [MyBooks] Nenhum pagamento vinculado ao pedido 19596530-818a-4ad3-a0b3-2342de45059c
+2025-07-23 14:00:02,994 [INFO] [MyBooks] Listagem paginada de pagamentos! Página 1, limite 10!
+2025-07-23 14:00:25,931 [INFO] [MyBooks] Pagamento vinculado ao pedido: Pedido 19596530-818a-4ad3-a0b3-2342de45059c - Pagamento 3d268538-6085-4d99-bd1f-da1d3442b3fc
+2025-07-23 14:00:51,680 [INFO] [MyBooks] Pagamento vinculado ao pedido: Pedido 37c26b62-8bd4-4d89-a86e-0c73a4913e7e - Pagamento 996b9176-b0f4-4e43-bbf7-74425831aa8f
+2025-07-23 14:01:11,678 [INFO] [MyBooks] Pagamento vinculado ao pedido: Pedido 3bb9092f-c535-4c3f-8ac2-84a8a794f297 - Pagamento 71e69cd5-585a-4b07-b4b0-7384d3a95e51
+2025-07-23 14:01:33,100 [INFO] [MyBooks] Pagamento vinculado ao pedido: Pedido db4f05ed-f581-4b97-8ae3-b8a014b50916 - Pagamento 71afab87-ac4e-47a7-bce4-d88895164405
+2025-07-23 14:01:53,908 [INFO] [MyBooks] Pagamento vinculado ao pedido: Pedido 4a7edf07-f064-46c4-83d7-f1269b64da4f - Pagamento 2e3db2da-6a2f-4076-a849-81dbfc9408ba
+2025-07-23 14:02:14,253 [INFO] [MyBooks] Listagem paginada de pagamentos vinculados ao pedido 4a7edf07-f064-46c4-83d7-f1269b64da4f. Página 1, limite 10.
+2025-07-23 14:03:15,849 [INFO] [MyBooks] Listagem paginada de usuários! Página 1, limite 10!
+2025-07-23 14:03:50,230 [INFO] [MyBooks] Listagem paginada de editoras! Página 1, limite 10!
+2025-07-23 14:04:21,167 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-23 14:05:58,425 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-23 14:06:31,177 [INFO] [MyBooks] Listagem paginada de usuários! Página 1, limite 10!
+2025-07-23 14:07:05,251 [INFO] [MyBooks] Listagem paginada de pagamentos! Página 1, limite 10!
+2025-07-23 14:07:58,599 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-23 14:08:47,256 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-23 14:12:02,251 [INFO] [MyBooks] Livro atualizado! ID a60600c7-76c8-468b-8255-78395d30035c!
+2025-07-23 14:12:11,359 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-23 14:12:34,773 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-23 14:13:32,198 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-23 14:14:37,189 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10!
+2025-07-23 14:14:42,661 [INFO] [MyBooks] Listagem paginada de pedidos! Página 1, limite 10!
+2025-07-23 14:17:03,810 [INFO] [MyBooks] Livro vinculado ao pedido: Pedido 4a7edf07-f064-46c4-83d7-f1269b64da4f - Livro a60600c7-76c8-468b-8255-78395d30035c
+2025-07-23 14:17:18,771 [WARNING] [MyBooks] Nenhum livro vinculado ao pedido a60600c7-76c8-468b-8255-78395d30035c
+2025-07-23 14:17:41,875 [INFO] [MyBooks] Listagem paginada de livros vinculados ao pedido 4a7edf07-f064-46c4-83d7-f1269b64da4f. Página 1, limite 10.
+2025-07-23 14:22:57,204 [INFO] [MyBooks] Consultados 1 pedidos detalhados do usuário dcae6275-9edb-41ff-a734-9e55174d4cd7 na página 1 com limite 10
+2025-07-23 14:23:23,237 [INFO] [MyBooks] Consultados 1 pedidos detalhados do usuário 431c1f72-52ac-46ae-ae3c-09c98d7ce5e2 na página 1 com limite 10
+2025-07-23 14:24:14,861 [INFO] [MyBooks] Livro vinculado ao pedido: Pedido 3bb9092f-c535-4c3f-8ac2-84a8a794f297 - Livro 534827fa-8b89-4425-9007-bab617add918
+2025-07-23 14:24:40,707 [INFO] [MyBooks] Livro vinculado ao pedido: Pedido db4f05ed-f581-4b97-8ae3-b8a014b50916 - Livro b2b627e9-3386-4a5d-a592-93a4e0abd093
+2025-07-23 14:25:12,293 [INFO] [MyBooks] Livro vinculado ao pedido: Pedido 37c26b62-8bd4-4d89-a86e-0c73a4913e7e - Livro 37f98e2e-5261-4142-80fb-9242cc8b9a02
+2025-07-23 14:25:32,905 [INFO] [MyBooks] Livro vinculado ao pedido: Pedido 19596530-818a-4ad3-a0b3-2342de45059c - Livro a796f6dc-da61-42ad-b728-d8f450972679
+2025-07-23 14:26:01,824 [INFO] [MyBooks] Consultados 1 pedidos detalhados do usuário dcae6275-9edb-41ff-a734-9e55174d4cd7 na página 1 com limite 10
+2025-07-23 14:41:31,654 [INFO] [MyBooks] Filtro aplicado! Total encontrados: 1!
+2025-07-23 14:42:05,414 [WARNING] [MyBooks] Formato inválido para data_nascimento! 2025-07-23!
+2025-07-23 14:44:41,117 [WARNING] [MyBooks] Formato inválido para data_nascimento! 2000-12-05!
+2025-07-23 14:45:12,658 [INFO] [MyBooks] Filtro aplicado! Total encontrados: 1!
+2025-07-23 14:46:01,074 [INFO] [MyBooks] Filtro aplicado! Total encontrados: 1!
+2025-07-23 14:47:40,490 [INFO] [MyBooks] Listagem ordenada de editoras! Página 1, limite 10!
+2025-07-23 14:49:06,947 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 14:49:06,950 [INFO] [MyBooks] Contagem de editoras! 5!
+2025-07-23 15:14:09,589 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-23 15:14:09,749 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 15:14:10,508 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 15:14:11,828 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-23 15:14:12,622 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 15:14:12,623 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 15:14:12,624 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 15:14:12,624 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 15:14:12,625 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 15:14:12,626 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 15:14:12,628 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 15:54:23,590 [INFO] [MyBooks] Consultados 1 pedidos detalhados do usuário 7cb7180f-ba01-4c29-a71f-b0fd8d435177 na página 1 com limite 10
+2025-07-23 15:55:06,359 [WARNING] [MyBooks] Editora não encontrada: bae7c937-be9b-40a0-98a2-4cbe752b6c02
+2025-07-23 16:11:42,890 [WARNING] [cassandra.cluster] Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2025-07-23 16:11:42,986 [WARNING] [cassandra.cluster] Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 16:11:44,432 [WARNING] [cassandra.cluster] Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2025-07-23 16:11:46,034 [INFO] [cassandra.policies] Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2025-07-23 16:11:47,137 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 16:11:47,138 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 16:11:47,138 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 16:11:47,139 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 16:11:47,139 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 16:11:47,140 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 16:11:47,141 [WARNING] [cassandra.cqlengine.management] CQLENG_ALLOW_SCHEMA_MANAGEMENT environment variable is not set. Future versions of this package will require this variable to enable management functions.
+2025-07-23 16:17:24,831 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 16:17:24,854 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 16:17:24,938 [INFO] [MyBooks] Autor criado: 0ecad910-7b66-4241-b691-c937c804a719 - Clarice Lima (clarice.lima@literatura.com)!
+2025-07-23 16:17:48,830 [WARNING] [MyBooks] Editora não encontrada! ID bae7c937-be9b-40a0-98a2-4cbe752b6c02!
+2025-07-23 16:18:04,238 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 16:18:04,254 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 16:18:04,267 [INFO] [MyBooks] Editora criada: d183fe83-ffc9-4021-b91b-1616c4316d6f - Editora Horizonte!
+2025-07-23 16:18:14,261 [INFO] [MyBooks] Listagem paginada de editoras! Página 1, limite 10!
+2025-07-23 16:18:37,136 [INFO] [MyBooks] Livro criado: 3a237d2f-e790-4d53-8d9a-94335b992a0c - O Mistério da Casa Abandonada!
+2025-07-23 16:18:48,096 [INFO] [MyBooks] Listagem paginada de livros! Página 1, limite 10, autor_id=None
+2025-07-23 16:19:17,679 [WARNING] [cassandra.protocol] Server warning: Aggregation query used without partition key
+2025-07-23 16:19:17,680 [INFO] [MyBooks] Contagem de livros! 6!
+2025-07-23 16:20:25,308 [INFO] [MyBooks] Filtro aplicado! Total encontrados: 1!
+2025-07-23 16:21:00,670 [INFO] [MyBooks] Consultados 1 pedidos detalhados do usuário 7cb7180f-ba01-4c29-a71f-b0fd8d435177 na página 1 com limite 10

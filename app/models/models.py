@@ -68,4 +68,4 @@ class PedidoPagamento(Model):
 class PedidoLivro(Model):
     __keyspace__ = 'mybooks'
     pedido_id = columns.UUID(primary_key=True, partition_key=True)
-    livro_id = columns.UUID(primary_key=True, clustering_order="ASC")
+    livro_id = columns.UUID(primary_key=True, clustering_order="ASC") 

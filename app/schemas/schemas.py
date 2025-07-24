@@ -122,7 +122,7 @@ class PaginatedLivros(BaseModel):
 
     class Config:
         orm_mode = True
-        
+
 # ----------- USUARIO -----------
 
 class UsuarioCreate(BaseModel):
@@ -156,7 +156,7 @@ class PaginatedUsuario(BaseModel):
 
     class Config:
         orm_mode = True
-    
+
 # ----------- PEDIDO -----------
 
 class PedidoCreate(BaseModel):
@@ -193,7 +193,6 @@ class PaginatedPedido(BaseModel):
     class Config:
         orm_mode = True
 
-
 # ----------- LIVRO_PEDIDO -----------
 
 class PedidoLivroBase(BaseModel):
@@ -207,19 +206,19 @@ class PedidoLivroRead(PedidoLivroBase):
     class Config:
         orm_mode = True
 
-class PaginatedPedidoLivro(BaseModel):
-    page: int
-    limit: int
-    total: int
-    items: List['LivroInfo']
+class LivroInfoPedido(BaseModel):
+    id: UUID
+    titulo: str
+    autor_nome: str
 
     class Config:
         orm_mode = True
 
-class LivroInfo(BaseModel):
-    id: UUID
-    titulo: str
-    autor_nome: str
+class PaginatedPedidoLivro(BaseModel):
+    page: int
+    limit: int
+    total: int
+    items: List[LivroInfoPedido]  # forward reference resolved
 
     class Config:
         orm_mode = True
@@ -292,10 +291,16 @@ class LivroInfo(BaseModel):
     titulo: str
     autor_nome: str
 
+    class Config:
+        orm_mode = True
+
 class PagamentoInfo(BaseModel):
     id: UUID
     valor: float
     data_pagamento: str
+
+    class Config:
+        orm_mode = True
 
 class PedidoDetalhado(BaseModel):
     id: UUID
@@ -306,7 +311,7 @@ class PedidoDetalhado(BaseModel):
     class Config:
         orm_mode = True
 
-# ----------- EDITORA_DETALHADO -----------
+# ----------- EDITORA DETALHADO -----------
 
 class AutorInfo(BaseModel):
     id: UUID
@@ -333,3 +338,6 @@ class EditoraComLivrosAutores(BaseModel):
 
     class Config:
         orm_mode = True
+
+# Resolve forward references
+PaginatedPedidoLivro.update_forward_refs()

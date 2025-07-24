@@ -101,13 +101,22 @@ def atualizar_livro(livro_id: UUID, livro_update: LivroUpdate):
 def listar_livros(
     page: int = Query(1, ge=1),
     limit: int = Query(10, ge=1),
+    autor_id: Optional[UUID] = Query(None),
 ):
     offset = (page - 1) * limit
-    todos = list(Livro.objects().all())
+
+    if autor_id:
+        todos = list(Livro.objects(autor_id=autor_id).all())
+    else:
+        todos = list(Livro.objects().all())
+
     total = len(todos)
     livros_paginados = todos[offset:offset + limit]
 
-    logger.info(f"Listagem paginada de livros! Página {page}, limite {limit}!")
+    logger.info(
+        f"Listagem paginada de livros! Página {page}, limite {limit}, autor_id={autor_id}"
+    )
+
     return PaginatedLivros(
         page=page,
         limit=limit,
